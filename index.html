@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTRL+BUILD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      background-image: url('Background.jpeg');
+      background-size: 120%;
+      background-position: center;
+      background-attachment: fixed;
+      filter: rgba(88, 58, 31,0.2);
+    }
+    header {
+      background-color: rgba(88, 58, 31,0.5);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #e7d2ae;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      color: #e7d2ae;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .bio {
+      padding: 60px 20px;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-left: 10%;
+      text-transform: uppercase;
+      line-height: 1.2;
+      transform: scaleX(1.2);
+    }
+    .bio h1 {
+      font-weight: 550;
+      font-size: 2em;
+      color: white;
+    }
+    .bio h2 {
+      font-weight: 400;
+      margin-top: 10px;
+      color: white;
+    }
+    .bio h3 {
+      font-weight: 400;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .banner {
+      position: fixed;
+      bottom: 3%;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      padding: 10px 0;
+    }
+
+    .banner-content {
+      display: flex;
+      gap: 10px; /* Adjust space between items */
+      animation: scrollBanner 40s linear infinite;
+      min-width: max-content; /* Ensures content is long enough for a seamless loop */
+    }
+
+    .banner-content span {
+      font-size: 9rem;
+      transform: scaleY(1.1);
+      color: white;
+      text-transform: uppercase;
+      white-space: nowrap;
+      word-spacing: 0px;
+    }
+
+    @keyframes scrollBanner {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+      background-color: rgba(88, 58, 31,0.8);
+      color: #e7d2ae;
+      padding: 15px 25px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: rgb(88, 58, 31);
+      transform: translateY(-5px);
+    }
+    footer {
+      text-align: center;
+      padding: 3px;
+      font-size: 0.9em;
+      background-color: rgba(88, 58, 31,0.5);
+      color: #e7d2ae;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CTRL+BUILD</div>
+    <nav>
+      <ul>
+        <li><a href="BUILD_LOG.html">BUILD LOG</a></li>
+        <li><a href="CTRL+CONNECT.html">CTRL+CONNECT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="bio">
+      <h1>Fifth-Year Mechatronics Engineering (Honours) & Applied Physics</h1>
+      <h2>Integrating Technology and Physics for Future Solutions</h2>
+      <h3>UTS Sydney</h3>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="BUILD_LOG.html">View my BUILD LOG</a>
+      <a href="CTRL+CONNECT.html">Contact Me Via CTRL+CONNECT</a>
+    </div>
+  </main>
+
+  <div class="banner">
+    <div class="banner-content">
+      <span> Python&nbsp; LabVIEW&nbsp; HTML&nbsp; CSS&nbsp; Java&nbsp; JavaScript&nbsp; Simulink&nbsp; C++&nbsp; C#&nbsp; C&nbsp; SolidWorks&nbsp; MATLAB&nbsp; Arduino&nbsp; ROS&nbsp;</span>
+      <span> Python&nbsp; LabVIEW&nbsp; HTML&nbsp; CSS&nbsp; Java&nbsp; JavaScript&nbsp; Simulink&nbsp; C++&nbsp; C#&nbsp; C&nbsp; SolidWorks&nbsp; MATLAB&nbsp; Arduino&nbsp; ROS&nbsp;</span>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Hallie Robins. All rights reserved.
+  </footer>
+
+</body>
+</html>
